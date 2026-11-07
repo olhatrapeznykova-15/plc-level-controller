@@ -64,7 +64,7 @@ How it works:
  
 **Hysteresis: pump stays on between the two levels** (`xLowLevel` and `xHighLevel` both FALSE, `xPump` still TRUE)
  
-![Hysteresis](images/04_hysteresis.png)
+![Hysteresis](LevelController.project/04_hysteresis.png)
  
 **No-fill alarm after 10 s** (`tFill` reached `T#10s`, `xAlarmNoFill` TRUE)
  
