@@ -68,7 +68,7 @@ How it works:
  
 **No-fill alarm after 10 s** (`tFill` reached `T#10s`, `xAlarmNoFill` TRUE)
  
-![Timer alarm](images/05_timer_alarm.png)
+![Timer alarm](LevelController.project/05_timer_alarm.png)
  
 **Sensor fault alarm** (both level sensors TRUE, pump blocked)
  
