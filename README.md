@@ -56,7 +56,7 @@ How it works:
  
 **Structured text version (ST)**
  
-![Structured text version](images/02_structured_text.png)
+![Structured text version](LevelController.project/02_structured_text.png)
  
 **Latch holding after START is released** (`xStartBtn` FALSE, `xMotorRunning` still TRUE)
  
