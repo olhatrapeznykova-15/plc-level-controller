@@ -72,7 +72,7 @@ How it works:
  
 **Sensor fault alarm** (both level sensors TRUE, pump blocked)
  
-![Sensor fault](images/06_sensor_fault.png)
+![Sensor fault](LevelController.project/06_sensor_fault.png)
  
 ## Test results
  
