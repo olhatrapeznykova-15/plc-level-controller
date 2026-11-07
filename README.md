@@ -52,7 +52,7 @@ How it works:
  
 **Full ladder program (LD)**
  
-![Full ladder program](images/01_overview_ladder.png)
+![Full ladder program](LevelController.project/01_overview_ladder.png)
  
 **Structured text version (ST)**
  
