@@ -1,0 +1,27 @@
+PROGRAM ST_PRG
+VAR
+	xStartBtn : BOOL;
+	xMotorRunning : BOOL;
+	xStopBtn : BOOL;
+	xEStopOK : BOOL;
+	xPump : BOOL;
+	xHighLevel : BOOL;
+	xLowLevel : BOOL;
+	xAlarmNoFill : BOOL;
+	xAlarmSensor : BOOL;
+	tFill : TON;
+END_VAR
+____________________________________________________________________________
+
+(* Network 1: motor start/stop latch with e-stop *)
+xMotorRunning := (xStartBtn OR xMotorRunning) AND xEStopOK AND NOT xStopBtn;
+
+(* Network 2: pump with level hysteresis *)
+xPump := (xLowLevel OR xPump) AND NOT xHighLevel AND xMotorRunning;
+
+(* Network 3: sensor fault, both level sensors on at once *)
+xAlarmSensor := xLowLevel AND xHighLevel;
+
+(* Network 4: pump running but level still low for 10 s *)
+tFill(IN := xPump AND xLowLevel, PT := T#10S);
+xAlarmNoFill := tFill.Q;
