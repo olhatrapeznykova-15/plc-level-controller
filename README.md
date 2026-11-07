@@ -60,7 +60,7 @@ How it works:
  
 **Latch holding after START is released** (`xStartBtn` FALSE, `xMotorRunning` still TRUE)
  
-![Latch](images/03_latch.png)
+![Latch](LevelController.project/03_latch.png)
  
 **Hysteresis: pump stays on between the two levels** (`xLowLevel` and `xHighLevel` both FALSE, `xPump` still TRUE)
  
